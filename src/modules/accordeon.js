@@ -1,4 +1,7 @@
 'use strict'
+import {
+   animate
+} from './helper';
 const accordeon = () => {
    const accordeon = document.querySelector('.accordeon');
    const element = document.querySelectorAll('.accordeon>.element');
@@ -11,6 +14,15 @@ const accordeon = () => {
             if (elem === elementBtn && elementContent[i].style.display === '') {
                elem.classList.add('active');
                elementContent[i].style.display = 'block';
+               animate({
+                  duration: 800,
+                  timing(timeFraction) {
+                     return timeFraction;
+                  },
+                  draw(progress) {
+                     elem.style.opacity = progress;
+                  }
+               });
             } else if (elem === elementBtn && elementContent[i].style.display === 'block') {
                elem.classList.remove('active');
                elementContent[i].style.display = '';

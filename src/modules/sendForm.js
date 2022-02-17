@@ -1,7 +1,6 @@
 'use strict'
 const sendForm = ({
    formID,
-   someElem = []
 }) => {
    const form = document.getElementById(formID);
    const statusBlock = document.createElement('div');

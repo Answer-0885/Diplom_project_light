@@ -20,20 +20,11 @@ modal('button-services', 'modal-close', 'modal-callback'); //Оформить з
 modal('fancyboxModal', 'modal-close', 'modal-callback'); //Блок "Звоните, мы обязательно вам поможем!"
 modal('mob-menu-btn', 'mobile-menu-close', 'mobile-menu'); // Бургер-меню
 sendForm({
-   formID: 'form1',
-   someElem: [{
-      type: 'input',
-   }]
+   formID: 'form1'
 });
 sendForm({
-   formID: 'form2',
-   someElem: [{
-      type: 'input',
-   }]
+   formID: 'form2'
 });
 sendForm({
-   formID: 'form3',
-   someElem: [{
-      type: 'input',
-   }]
+   formID: 'form3'
 });
